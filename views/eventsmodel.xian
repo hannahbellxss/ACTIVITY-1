@@ -1,0 +1,48 @@
+{{> head}}
+
+<body class="bg-gray-50">
+
+    <div class="text-center mt-20">
+
+        <h2 class="text-2xl">CRUD OPERATION</h2>
+<a href="/eventscontroller"
+        <table class="table-auto; border-separate">
+
+            <thead>
+                <tr>
+                    <th>event_name</th>
+                    <th>event_date</th>
+                    <th>venue</th>
+                    <th>organier</th>
+                    <th>status</th>
+                    <th>action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each data}}
+
+                <tr>
+                    <td>{{event_name}}</td>
+                    <td>{{event_date}}</td>
+                    <td>{{venue}}</td>
+                    <td>{{organier}}</td>
+                    <td>{{status}}</td>
+
+                    <td>
+                        <a href="/eventcontroller/{{id}}/edit">edit</a>
+                        |
+                        <a href="/eventcontroller/{{id}}/delete">delete</a>
+                    </td>
+                </tr>
+
+                {{/each}}
+            </tbody>
+
+        </table>
+
+    </div>
+
+</body>
+
+{{> footer}}

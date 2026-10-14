@@ -1,0 +1,9 @@
+<form method="post" action="/">
+    <input type="text" name="event_name" placeholder="event_name"value="{{data.event_name}}">
+    <input type="text" name="event_date" placeholder="event_date" value="{{data.event_date}}">
+    <input type="text" name="venue" placeholder="venue"  value="{{data.venue}}">
+    <input type="text"  name="organier" placeholder="organier"  value="{{data.organier}}">
+    <input type="text"  name="status"   placeholder="status" value="{{data.status}}">
+    <input type="submit">
+
+</form>
